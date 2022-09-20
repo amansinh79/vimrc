@@ -7,13 +7,15 @@ endif
 call plug#begin('~/.vim/plugged')
 
 Plug 'nvim-lua/plenary.nvim'
-Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
 Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
 Plug 'ayu-theme/ayu-vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'ThePrimeagen/vim-be-good'
 Plug 'jiangmiao/auto-pairs'
+
 call plug#end()
+
 
 let mapleader=" "
 
@@ -28,13 +30,17 @@ nnoremap <leader>gy <Plug>(coc-type-definition)
 nnoremap <leader>gi <Plug>(coc-implementation)
 nnoremap <leader>gr <Plug>(coc-references)
 nnoremap <leader>rf gg=G<C-o>
-nnoremap <Leader>n o<Esc>
-nnoremap <Leader>N O<Esc>
+nnoremap <leader>n o<Esc>
+nnoremap <leader>N O<Esc>
+nnoremap <leader>a <C-^>
+nnoremap <M-down> ddp
+nnoremap <M-up> ddkP
 
+colorscheme ayu
 set termguicolors     
 let ayucolor="dark"  
-colorscheme ayu
 
+set number
 set relativenumber
 set tabstop=4
 set shiftwidth=4
