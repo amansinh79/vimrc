@@ -14,6 +14,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'ThePrimeagen/vim-be-good'
 Plug 'jiangmiao/auto-pairs'
 
+
 call plug#end()
 
 
@@ -35,7 +36,7 @@ nnoremap <leader>N O<Esc>
 nnoremap <leader>a <C-^>
 nnoremap <M-down> ddp
 nnoremap <M-up> ddkP
-
+nnoremap <leader>e :Ex<cr>
 colorscheme ayu
 set termguicolors     
 let ayucolor="dark"  
